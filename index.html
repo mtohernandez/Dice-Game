@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roll The Dice</title>
+</head>
+<body>
+  <header class="header">
+
+    <div class="controls grid">
+      <div class="input__game">
+        <div class="input__item">
+          <p class="input__title capitalize">player 1</p>
+          <input type="text" class="input name--0"> 
+        </div>
+        <div class="input__item">
+          <p class="input__title capitalize">player 2</p>
+          <input type="text" class="input name--1">
+        </div>
+        <div class="input__item">
+          <p class="input__title capitalize">max score</p>
+          <input type="number" class="input max__score">
+        </div>
+      </div>
+
+      <div class="input__button">
+        <button class="button__newgame uppercase">new game</button>
+      </div>
+
+      <div class="input__description">
+        <p class="input__description-item capitalize">click on 'new game' to start after editing these inputs</p>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main id="main">
+    <section class="game section">
+      <div class="cards grid">
+        <div class="card--0 grid card--active">
+          <div class="card__player">
+            <p class="player__name player__name--0 bold uppercase">Player 'Name'</p>
+            <p class="player__turns capitalize">turns left: <span class="turns turns--0">0</span></p>
+          </div>
+          <div class="card__points">
+            <p class="points points--0 bold">54</p>
+            <p class="points__title lightbold capitalize">points</p>
+          </div>
+        </div>
+
+        <div class="roll" id="roll">
+          <div class="dice">
+            <img src="./assets/dice-1.png" alt="dice" class="dice__item">
+          </div>
+          <div class="current">
+            <p class="current__points bold">12</p>
+            <p class="current__title uppercase">current</p>
+          </div>
+        </div>
+        
+        <div class="card--1 grid">
+          <div class="card__player ">
+            <p class="player__name player__name--1 bold uppercase">Player 'Name'</p>
+            <p class="player__turns capitalize">turns left: <span class="turns turns--1 ">0</span></p>
+          </div>
+          <div class="card__points">
+            <p class="points points--1 bold">14</p>
+            <p class="points__title lightbold capitalize">points</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="buttons">
+        <button class="button__item roll-button uppercase">roll</button>
+        <button class="button__item hold-button uppercase">hold</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
